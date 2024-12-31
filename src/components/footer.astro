@@ -24,14 +24,13 @@ const { title, body, href, primary, listIcon, iconSize, links = [], hiddenLinks 
                     <Logo/>
                     <p class="max-w-sm mt-2">{body}</p>
                     <div class="flex gap-2 mt-6">
-                        {listIcon.map(({ iconPath, url }, index) => (
-                            <a
-                                key={index} 
-                                href={url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-block"
-                            >
+                        {listIcon.map(({ iconPath, url }) => (
+                                <a
+                                    href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="inline-block"
+                                >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="currentColor"
@@ -55,22 +54,22 @@ const { title, body, href, primary, listIcon, iconSize, links = [], hiddenLinks 
 
             <div class={`mt-6 lg:mt-0 lg:flex-1 ${primary}`}>
                 <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 mt-4">
-                  {Array.isArray(links) && links.map(link => (
-                    !hiddenLinks.includes(link.category) && (
-                        <div key={link.category}> {/* Tambahkan key untuk setiap kategori */}
-                            <h3 class="uppercase font-bold">{link.category}</h3>
-                            {Array.isArray(link.items) && link.items.map(item => (
-                                <a 
-                                    key={item.label} // Tambahkan key untuk setiap item
-                                    href={item.href} 
-                                    class="block mt-2 text-sm"
-                                >
-                                    {item.label}
-                                </a>
-                            ))}
-                        </div>
-                    )
-                ))}
+                    {Array.isArray(links) && links.map(link => (
+                        !hiddenLinks.includes(link.category) && (
+                            <div> {/* Key dihilangkan */}
+                                <h3 class="uppercase font-bold">{link.category}</h3>
+                                {Array.isArray(link.items) && link.items.map(item => (
+                                    <a 
+                                        href={item.href} 
+                                        class="block mt-2 text-sm"
+                                    >
+                                        {item.label}
+                                    </a>
+                                ))}
+                            </div>
+                        )
+                    ))}
+                    
                 </div>
             </div>
         </div>
