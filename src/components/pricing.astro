@@ -1,0 +1,72 @@
+---
+// Component Script
+interface Props {
+    title: string;
+    titleClass?: string;
+    priceClass?: string;
+    titleButton: string;
+    body: string;
+    iconPath?: string;
+    primaryClass?: string;
+    buttonClass?: string;
+    iconSize?: string;
+    price: string;
+    href?: string;
+    listItems: string[];
+}
+
+const {
+    title,
+    titleClass = "",
+    priceClass = "",
+    titleButton,
+    body,
+    iconPath = "",
+    primaryClass = "",
+    buttonClass = "bg-blue-900 text-white rounded-lg",
+    iconSize = "w-12 h-12",
+    price,
+    href = "#",
+    listItems,
+} = Astro.props;
+---
+
+<!-- Component HTML -->
+<div class={`drop-shadow-xl flex flex-col justify-between ${primaryClass}`}>
+    <div class={`${titleClass}`}>
+        <h2 class={`text-2xl font-bold font-geist `}>{title}</h2>
+        <p class="mt-6 mb-0">{body}</p>
+    </div>
+    <div class={`font-geist ${priceClass} my-2`}>
+        {
+            listItems.map((item, index) => (
+                <p class="mt-2 mb-0 flex gap-2">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class={`${iconSize} text-blue-900 mb-2 ${!iconPath ? "hidden" : ""}`}
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d={iconPath}
+                        />
+                    </svg>
+                    {item}
+                </p>
+            ))
+        }
+        <h2 class="m-0 font-bold mt-6 text-center">Mulai dari</h2>
+        <h2 class="m-0 font-bold text-3xl text-center">{price}</h2>
+    </div>
+    <div class="text-center mb-5">
+        <a href={href}>
+            <button class={`${buttonClass} font-geist font-bold text-center my-6 mx-auto px-6 py-3`}
+                >{titleButton}</button
+            >
+        </a>
+    </div>
+</div>

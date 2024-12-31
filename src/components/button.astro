@@ -1,0 +1,26 @@
+---
+interface Props {
+	title: string;
+	href: string;
+	path: string;
+	primary: string;
+}
+
+const { title, href, path, primary } = Astro.props;
+---
+
+<a
+	href={href}
+	class=`flex flex-row items-center justify-center gap-x-1 font-geist font-bold ${primary} px-6 py-3 transition duration-300`>
+	{title}
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		fill="none"
+		viewBox="0 0 24 24"
+		stroke-width="2"
+		stroke="currentColor"
+		class=`size-5 ${!path ? 'hidden' : ''}`
+	>
+		<path stroke-linecap="round" stroke-linejoin="round" d={path}></path>
+	</svg>
+</a>

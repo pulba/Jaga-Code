@@ -1,0 +1,13 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+const { title, desc } = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" content={desc} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<link rel="icon" type="image/webp" href="/favicon.webp" />
+<title>{title} Jaga Code</title>
+<ViewTransitions />

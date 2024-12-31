@@ -1,0 +1,327 @@
+---
+import Landing from "../../layouts/landing.astro";
+import Icon from "../../components/icon.astro";
+import Button from "../../components/button.astro";
+import Pricing from "../../components/pricing.astro";
+import Card from "../../components/Card.astro";
+import Footer from "../../components/footer.astro";
+import { Image, getImage } from "astro:assets";
+import cover from "../../assets/krelab1.webp";
+import Krelab1 from "../../assets/krelab.webp";
+import Krelab2 from "../../assets/krelab2.webp";
+import Krelab3 from "../../assets/krelab3.webp";
+import Krelab4 from "../../assets/krelab4.webp";
+import Krelab5 from "../../assets/krelab5.webp";
+import Krelab6 from "../../assets/krelab6.webp";
+const optimizedBackground = await getImage({ src: cover, format: "webp" });
+
+interface Props {
+  title: string;
+  desc: string;
+  slug: string;
+  image: string;
+} 
+export const frontmatter = {
+  title: "Landing Page",
+  slug: "/landing/krelab",
+  image: "/src/assets/porto2.webp",
+};
+const { title, desc } = Astro.props;
+---
+
+<Landing title="Krelab |" desc="Landing page portofolio">
+    <section>
+        <div class="container px-6 pt-20 mx-auto">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="w-full h-full lg:w-1/2 font-geist">
+                    <h6 class="text-red-600 text-xl font-bold">
+                        Hi There, I'm KreLab
+                    </h6>
+                    <h6
+                        class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-3"
+                    >
+                        Full Stack Developer
+                    </h6>
+                    <p class="max-w-xl">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing,
+                        elit. Ipsa voluptate reiciendis nesciunt sed, commodi
+                        aperiam iste rem blanditiis dicta impedit sequi. Ratione
+                        odit, excepturi, numquam a libero maxime aut. Rem?
+                    </p>
+                    <div class="flex flex-col md:flex-row gap-4 mt-5">
+                        <Button
+                            primary="text-white bg-red-600 rounded-md hover:bg-gray-600"
+                          title="Learn More"
+                            href="/"
+                            path=""
+                        />
+                        <Button
+                            primary="font-bold hover:text-red-600 rounded-md border border-red-600"
+                          title="See our work"
+                            href="/"
+                            path="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
+                    </div>
+                </div>
+                <div
+                    class="flex items-center justify-center w-full bg-cover bg-center lg:mt-0 lg:w-1/2"
+                    style={`background-image:url(${cover.src});`}
+                >
+                    <Image
+                        src={Krelab1}
+                        alt="Hijaban"
+                        class="object-cover object-center w-full h-full lg:max-w-3xl"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container px-2 sm:px-6 pb-20 mx-auto">
+            <div
+                class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-8 w-full bg-gray-800 rounded-lg py-6 md:py-10 md:px-10 md:divide-x"
+            >
+                <Card
+                  title="Fast Learn"
+                  titlec="[&>h2]:text-xl"
+                    body="Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Dolorem natus esse ullam exercitationem soluta ad! Assumenda eum"
+                    primary="flex-col text-white font-geist"
+                    size="size-12 md:size-20 text-red-600"
+                    icon="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+                />
+                <Card
+                  title="Friendly Support "
+                  titlec="[&>h2]:text-xl"
+                    body="Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Dolorem natus esse ullam exercitationem soluta ad! Assumenda eum"
+                    primary="flex-col text-white font-geist"
+                    size="size-12 md:size-20 text-red-600"
+                    icon="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0 6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
+                />
+                <Card
+                  title="Creative"
+                  titlec="[&>h2]:text-xl"
+                    body="Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Dolorem natus esse ullam exercitationem soluta ad! Assumenda eum"
+                    primary="flex-col text-white font-geist"
+                    size="size-12 md:size-20 text-red-600"
+                    icon="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z"
+                />
+                <Card
+                  title="Work Hard"
+                  titlec="[&>h2]:text-xl"
+                    body="Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Dolorem natus esse ullam exercitationem soluta ad! Assumenda eum"
+                    primary="flex-col text-white font-geist"
+                    size="size-12 md:size-20 text-red-600"
+                    icon="M12 9v3.75m0-10.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Zm0 13.036h.008v.008H12v-.008Z"
+                />
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container px-6 py-20 mx-auto">
+            <div class="font-geist text-center font-bold max-w-xl mx-auto space-y-4">
+                <h6 class="text-red-600 text-xl">Services</h6>
+                <h6 class="text-gray-800 text-4xl md:text-5xl">
+                    We provide the best services
+                </h6>
+            </div>
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-lg mx-auto mt-10 *:flex-col *:font-geist *:justify-center *:items-center *:text-center *:border *:border-red-600 *:rounded-md *:p-6"
+            >
+                <Card
+                  title="Design"
+                  titlec="[&>h2]:text-xl"
+                    body="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                    primary=""
+                    size="size-12 text-red-600"
+                    icon="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
+                />
+                <Card
+                  title="Programmer"
+                  titlec="[&>h2]:text-xl text-white"
+                    body="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                    primary="bg-red-600"
+                    size="size-12 text-white"
+                    icon="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
+                />
+                <Card
+                  title="Advertising"
+                  titlec="[&>h2]:text-xl"
+                    body="Lorem ipsum dolor, sit amet consectetur adipisicing elit."
+                    primary=""
+                    size="size-12 text-red-600"
+                    icon="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"
+                />
+            </div>
+        </div>
+    </section>
+    <section>
+      <div class="container px-6 py-20 mx-auto">
+        <div class="font-geist text-center font-bold max-w-xl mx-auto space-y-4">
+          <h6 class="text-red-600 text-2xl">Portfolio</h6>
+          <h6 class="text-gray-800 text-4xl md:text-5xl">See our awesome done
+            project</h6>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-y-28 gap-x-8 max-w-screen-lg mx-auto mt-16 xl:mt-12 xl:gap-y-28 lg:grid-cols-2 *:flex *:items-end *:bg-cover *:rounded-lg *:h-80 *:w-full *:justify-end">
+          <div class=""
+            style={`background-image:url(${Krelab2.src});`}>
+            <div
+              class="w-96 px-8 py-8 translate-y-20 -translate-x-5 rounded-md bg-white shadow-md font-geist">
+              <h2 class="mt-4 text-xl font-bold text-red-600 capitalize">
+                Design Art</h2>
+              <p class="mt-2 text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            </div>
+          </div>
+          <div
+            style={`background-image:url(${Krelab3.src});`}>
+            <div
+              class="w-96 px-8 py-8 translate-y-20 -translate-x-5 rounded-md bg-white shadow-md font-geist">
+              <h2 class="mt-4 text-xl font-bold text-red-600 capitalize">
+                Marketing</h2>
+              <p class="mt-2 text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            </div>
+          </div>
+          <div
+            style={`background-image:url(${Krelab4.src});`}>
+            <div
+              class="w-96 px-8 py-8 translate-y-20 -translate-x-5 rounded-md bg-white shadow-md font-geist">
+              <h2 class="mt-4 text-xl font-bold text-red-600 capitalize">
+                Creative Design</h2>
+              <p class="mt-2 text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            </div>
+          </div>
+          <div
+            style={`background-image:url(${Krelab5.src});`}>
+            <div
+              class="w-96 px-8 py-8 translate-y-20 -translate-x-5 rounded-md bg-white shadow-md font-geist">
+              <h2 class="mt-4 text-xl font-bold text-red-600 capitalize">
+                Programming</h2>
+              <p class="mt-2 text-gray-800">
+                Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container px-6 py-20 mx-auto">
+        <div class="font-geist font-bold space-y-4 text-center">
+          <h6 class="text-red-600 text-2xl">Pricing</h6>
+          <h6 class="text-gray-800 text-4xl md:text-5xl">Choose our pricing</h6>
+        </div>
+        <div
+          class="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3 *:w-full *:h-full *:font-geist *:p-8 *:border *:border-gray-200 *:rounded-lg *:shadow-lg">
+          <Pricing
+            title="Design"
+            titleClass="[&>h2]:text-red-600 [&>h2]:text-center [&>h2]:uppercase"
+            titleButton="Get Started"
+            body="Lorem ipsum, dolor sit amet consectetur adipisicing elit"
+            primaryClass=""
+            price="$89"
+            iconSize="size-6"
+            href="#"
+            listItems={[
+              "Free Support",
+              "Update",
+              "Revision",
+              "Unlimited",
+              "Design Responsive",
+              "3 Working Days Processing",
+            ]}
+            buttonClass="bg-red-600 text-white rounded-lg"
+            iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+          />
+          <Pricing
+            title="Programming"
+            titleClass="[&>*]:text-white [&>h2]:text-center [&>h2]:uppercase"
+            titleButton="Get Started"
+            body="Lorem ipsum, dolor sit amet consectetur adipisicing elit"
+            primaryClass="bg-gray-800 text-white"
+            price="$120"
+            iconSize="size-6 text-white"
+            href="#"
+            listItems={[
+              "Free Support",
+              "Update",
+              "Revision",
+              "Unlimited",
+              "Design Responsive",
+            ]}
+            buttonClass="bg-red-600 text-white rounded-lg"
+            iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+          />
+          <Pricing
+            title="Advertising"
+            titleClass="[&>h2]:text-red-600 [&>h2]:text-center [&>h2]:uppercase"
+            titleButton="Get Started"
+            body="Lorem ipsum, dolor sit amet consectetur adipisicing elit"
+            primaryClass=""
+            price="$69"
+            iconSize="size-6"
+            href="#"
+            listItems={[
+              "Free Support",
+              "Update",
+              "Revision",
+              "Unlimited",
+              "Design Responsive",
+              "Meta Support",
+            ]}
+            buttonClass="bg-red-600 text-white rounded-lg"
+            iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+          />
+        </div>
+      </div>
+    </section>
+    <Footer title="Krelab" body="Sebuah jasa website profesional tanpa anti ribet, murah dan cepat." href="/" primary="bg-gray-800 text-white" iconSize="size-6" listIcon={[
+      {
+        iconPath: "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z",
+        url: "https://google.com"
+      },
+      {
+        iconPath: "M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z",
+        url: "https://instagram.com"
+      },
+      {
+        iconPath: "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z",
+        url: "https://github.com"
+      },
+      ]},
+      links={[
+          {
+              category: 'About',
+              items: [
+                  { label: 'Company', href: '#' },
+                  { label: 'Community', href: '#' },
+                  { label: 'Careers', href: '#' },
+              ],
+          },
+          {
+              category: 'Blog',
+              items: [
+                  { label: 'Tech', href: '#' },
+                  { label: 'Music', href: '#' },
+                  { label: 'Videos', href: '#' },
+              ],
+          },
+          {
+              category: 'Products',
+              items: [
+                  { label: 'Mega Cloud', href: '#' },
+                  { label: 'Aperion UI', href: '#' },
+                  { label: 'Meraki UI', href: '#' },
+              ],
+          },
+          {
+              category: 'Contact',
+              items: [
+                  { label: '+1 526 654 8965', href: 'tel:+15266548965' },
+                  { label: 'example@email.com', href: 'mailto:example@email.com' },
+              ],
+          },
+      ]} 
+      hiddenLinks={[]} />
+</Landing>

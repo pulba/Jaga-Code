@@ -1,0 +1,38 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	primary: string;
+	size: string;
+	titlec: string;
+	icon?: string; // path untuk SVG
+	number?: number; // nomor untuk ditampilkan
+}
+
+const { title, body, primary, size, titlec, icon, number } = Astro.props;
+
+---
+
+<div class={`flex px-6 drop-shadow-2xl ${primary} transition ease-linear duration-500`}>
+	{/* Render SVG atau Number */}
+	{icon ? (
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke-width="1"
+			stroke="currentColor"
+			class={`${size} mb-2`}
+		>
+			<path stroke-linecap="round" stroke-linejoin="round" d={icon}></path>
+		</svg>
+	) : number ? (
+		<div class={`${size} mb-2 font-bold`}>{number}</div>
+	) : null}
+
+	<div class={`${titlec} font-geist`}>
+		<h2 class="my-4 font-bold">{title}</h2>
+		<p class="">{body}</p>
+	</div>
+</div>
+

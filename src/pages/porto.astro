@@ -1,0 +1,44 @@
+---
+import Page from "../layouts/page.astro";
+interface Frontmatter {
+  title: string;
+  slug: string;
+  image: string;
+}
+
+interface AstroModule {
+  frontmatter: Frontmatter;
+  default: any; // Komponen Astro
+}
+const landingFiles = import.meta.glob<AstroModule>('./landing/*.astro', { eager: true });
+const getComponents = (files: Record<string, any>) => Object.values(files).map((file) => ({
+  title: file.frontmatter.title,
+  slug: file.frontmatter.slug,
+  image: file.frontmatter.image,
+  component: file.default,
+}));
+
+const landingComponents = getComponents(landingFiles);
+
+
+---
+
+
+<Page title="Portofolio |" desc="Portofolio Kami">
+    <section>
+        <div class="container py-20 px-6 mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
+                {landingComponents.map(({ component: Component, title, slug, image }) => (
+				<div class="text-center font-bold font-geist rounded-lg border border-gray-200 shadow-2xl">
+				  <a href={slug} target="_blank">
+					<img src={image} alt={`Image for ${title}`} class="aspect-square object-cover object-top rounded-t-lg hover:object-bottom ease-linear transition-all duration-[3000ms] delay-100" />
+				  </a>
+				  <a href={slug} target="_blank">
+					<h2 class="my-4">{title}</h2>
+				  </a>
+				</div>
+				))}
+            </div>
+        </div>
+    </section>
+</Page>

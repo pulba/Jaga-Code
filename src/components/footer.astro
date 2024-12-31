@@ -1,0 +1,84 @@
+---
+import Logo from './logo.astro';
+
+// Footer.astro
+interface Props {
+    title: string;
+    body: string;
+    href: string;
+    primary: string;
+    iconSize: string;
+    links: { category: string; items: { label: string; href: string }[] }[];
+    hiddenLinks: string[];
+    listIcon: { iconPath: string; url: string }[];
+}
+
+const { title, body, href, primary, listIcon, iconSize, links = [], hiddenLinks = [] } = Astro.props;
+---
+
+<footer class={`font-geist ${primary}`}>
+    <div class="container p-6 mx-auto">
+        <div class="lg:flex py-6">
+            <div class="w-full -mx-6 lg:w-2/5">
+                <div class="px-6">
+                    <Logo/>
+                    <p class="max-w-sm mt-2">{body}</p>
+                    <div class="flex gap-2 mt-6">
+                        {listIcon.map(({ iconPath, url }, index) => (
+                            <a
+                                key={index} 
+                                href={url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-block"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="none"
+                                    class={`${iconSize} mb-2 ${!iconPath ? "hidden" : ""}`}
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        fill-rule="evenodd"
+                                        d={iconPath}
+                                    />
+                                </svg>
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div class={`mt-6 lg:mt-0 lg:flex-1 ${primary}`}>
+                <div class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 mt-4">
+                  {Array.isArray(links) && links.map(link => (
+                    !hiddenLinks.includes(link.category) && (
+                        <div key={link.category}> {/* Tambahkan key untuk setiap kategori */}
+                            <h3 class="uppercase font-bold">{link.category}</h3>
+                            {Array.isArray(link.items) && link.items.map(item => (
+                                <a 
+                                    key={item.label} // Tambahkan key untuk setiap item
+                                    href={item.href} 
+                                    class="block mt-2 text-sm"
+                                >
+                                    {item.label}
+                                </a>
+                            ))}
+                        </div>
+                    )
+                ))}
+                </div>
+            </div>
+        </div>
+
+        <hr class="h-px my-6 bg-gray-200 border-none" />
+
+        <div class="text-center flex flex-row gap-2">
+            © {title} 2025 - All rights reserved
+        </div>
+    </div>
+</footer>

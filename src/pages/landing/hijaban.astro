@@ -1,0 +1,764 @@
+---
+import Landing from "../../layouts/landing.astro";
+import Icon from "../../components/icon.astro";
+import Footer from "../../components/footer.astro";
+import { Image, getImage } from "astro:assets";
+import cover from "../../assets/hijaban8.webp";
+import Hijab from "../../assets/hijaban.webp";
+import Hijab1 from "../../assets/hijaban1.webp";
+import Hijab2 from "../../assets/hijaban2.webp";
+import Hijab3 from "../../assets/hijaban3.webp";
+import Hijab4 from "../../assets/hijaban4.webp";
+import Hijab5 from "../../assets/hijaban5.webp";
+import Hijab6 from "../../assets/hijaban6.webp";
+import Hijab7 from "../../assets/hijaban7.webp";
+import Hijab8 from "../../assets/hijaban8.webp";
+import Hijab9 from "../../assets/hijaban9.webp";
+import Hijab10 from "../../assets/hijaban10.webp";
+import Hijab11 from "../../assets/hijaban11.webp";
+import Hijab12 from "../../assets/hijaban12.webp";
+import Hijab13 from "../../assets/hijaban13.webp";
+import Hijab14 from "../../assets/hijaban14.webp";
+import Hijab15 from "../../assets/hijaban15.webp";
+import Hijab16 from "../../assets/hijaban16.webp";
+import Hijab17 from "../../assets/hijaban17.webp";
+const { title, desc } = Astro.props;
+const optimizedBackground = await getImage({ src: cover, format: "webp" });
+
+export const frontmatter = {
+  title: "Landing Page",
+  slug: "/landing/hijaban",
+  image: "/src/assets/porto1.webp",
+};
+---
+
+<Landing title="Hijaban |" desc="Hijaban">
+  <section class="relative bg-no-repeat bg-center bg-cover before:mix-blend-multiply before:content-[''] before:absolute before:bg-gray-600 before:opacity-70 before:w-full before:h-full"
+    style={`background-image:url(${cover.src});`}>
+    <div class="container px-6 mx-auto relative">
+      <div
+        class="max-w-2xl h-screen text-center mx-auto flex flex-col justify-center items-center space-y-3"
+      >
+        <h3
+          class="text-md sm:text-2xl text-left font-bold font-roboto text-yellow-300"
+        >
+          HIJAB CANTIK
+        </h3>
+        <h1 class="text-5xl md:text-8xl text-white font-serif">NO LIMIT</h1>
+        <p class="font-roboto text-white max-w-prose">
+          Odit sed distinctio nemo possimus, animi illum reiciendis
+          perspiciatis, ipsam expedita nam non incidunt eveniet labore.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center items-center gap-4 max-w-xs sm:max-w-sm w-full *:w-full *:px-8 *:py-3 *:font-bold *:leading-5 *:text-center *:uppercase *:focus:outline-none *:transition-colors *:duration-700 *:ease-linear *:rounded-sm"
+        >
+          <button
+            class="text-white border hover:bg-yellow-300 hover:text-gray-600"
+          >
+            Katalog
+          </button>
+          <button
+            class="text-gray-600 bg-yellow-300 hover:text-white hover:bg-gray-600"
+          >
+            Beli Produk
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <h1 class="text-4xl sm:text-6xl text-gray-600 text-center font-serif">
+        Promo Kami
+      </h1>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 *:relative *:h-96 *:overflow-hidden *:rounded-lg *:border *:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+      >
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab3}
+              alt="Hijaban"
+              class="object-cover object-center"
+            />
+          </div>
+
+          <div class="px-6 py-10 z-20 absolute bottom-0 *:relative max-w-sm">
+            <p class="text-xl font-bols font-roboto uppercase text-yellow-300">
+              special day
+            </p>
+            <h1 class="text-3xl text-white font-serif font-light uppercase">
+              discount 50% off all items
+            </h1>
+            <a
+              href="#"
+              class="font-bold font-roboto bg-yellow-300 text-gray-600 p-2 mt-2"
+              >Ambil Promo</a
+            >
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab4}
+              alt="Hijaban"
+              class="object-cover object-center"
+            />
+          </div>
+
+          <div class="px-6 py-10 z-20 absolute bottom-0 *:relative max-w-sm">
+            <p class="text-xl font-bols font-roboto uppercase text-yellow-300">
+              special day
+            </p>
+            <h1 class="text-3xl text-white font-serif font-light uppercase">
+              BUY 2 GET VOUCHER
+            </h1>
+            <a
+              href="#"
+              class="font-bold font-roboto bg-yellow-300 text-gray-600 p-2 mt-2"
+              >Ambil Promo</a
+            >
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab2}
+              alt="Hijaban"
+              class="object-cover object-center"
+            />
+          </div>
+
+          <div class="px-6 py-10 z-20 absolute bottom-0 *:relative max-w-sm">
+            <p class="text-xl font-bols font-roboto uppercase text-yellow-300">
+              special day
+            </p>
+            <h1 class="text-3xl text-white font-serif font-light uppercase">
+              SYAR'I HIJAB 15% OFF
+            </h1>
+            <a
+              href="#"
+              class="font-bold font-roboto bg-yellow-300 text-gray-600 p-2 mt-2"
+              >Ambil Promo</a
+            >
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab1}
+              alt="Hijaban"
+              class="object-cover object-center"
+            />
+          </div>
+
+          <div class="px-6 py-10 z-20 absolute bottom-0 *:relative max-w-sm">
+            <p class="text-xl font-bols font-roboto uppercase text-yellow-300">
+              special day
+            </p>
+            <h1 class="text-3xl text-white font-serif font-light uppercase">
+              INSTAN HIJAB SERIES
+            </h1>
+            <a
+              href="#"
+              class="font-bold font-roboto bg-yellow-300 text-gray-600 p-2 mt-2"
+              >Ambil Promo</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section>
+  <div class="container px-6 py-10 mx-auto">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <div class="w-full lg:w-1/2">
+        <Image
+          src={Hijab5}
+          alt="Hijab8"
+          class="aspect-video object-cover object-center"
+        />
+      </div>
+      <div class="w-full lg:w-1/2 px-0 lg:px-12 order-first lg:order-none">
+        <h3
+          class="text-xl font-bold font-roboto bg-gray-600 text-white w-max px-4 py-3"
+        >
+          STORY BEHIND
+        </h3>
+        <h1
+          class="text-4xl md:text-6xl text-gray-600 font-serif tracking-wide"
+        >
+          HIJABAN
+        </h1>
+        <hr class="my-2 border-2 border-gray-600" />
+        <p class="mt-4 font-roboto text-gray-600">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi
+          reprehenderit vitae exercitationem aliquid dolores ullam temporibus
+          enim expedita aperiam mollitia iure consectetur dicta tenetur, porro
+          consequuntur saepe accusantium consequatur.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+  <section>
+    <div class="container px-6 py-12 mx-auto">
+      <div class="text-center flex flex-col items-center justify-center">
+        <h3 class="text-4xl md:text-6xl font-light font-serif text-gray-600">
+          Katalog
+        </h3>
+        <hr class="my-2 border-2 w-20 border-gray-600" />
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-8 *:relative *:aspect-square *:overflow-hidden *:rounded-lg *:border *:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]"
+      >
+        <div>
+          <div
+            class="relative duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab6}
+              alt="Hijaban"
+              class="object-cover object-center aspect-square"
+            />
+          </div>
+          <div class="px-6 py-10 z-20 absolute right-0 bottom-0 max-w-sm text-right">
+            <p class="text-right font-bols font-roboto pt-2 uppercase text-white">
+              7 COLORS AVAILABLE
+            </p>
+            <div class="flex flex-row gap-2 justify-end items-center">
+              <span class="font-bold font-roboto bg-yellow-300 text-right text-gray-600 py-1 px-4 rounded-sm">RP429.000</span>
+            <a href="#">
+              <Icon
+              primary="size-8 bg-white text-right text-gray-600 p-1 rounded-full"
+              href=""
+              path="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab7}
+              alt="Hijaban"
+              class="object-cover object-center aspect-square"
+            />
+          </div>
+          <div class="px-6 py-10 z-20 absolute right-0 bottom-0 max-w-sm text-right">
+            <p class="text-right font-bols font-roboto pt-2 uppercase text-white">
+              7 COLORS AVAILABLE
+            </p>
+            <div class="flex flex-row gap-2 justify-end items-center">
+              <span class="font-bold font-roboto bg-yellow-300 text-right text-gray-600 py-1 px-4 rounded-sm">RP429.000</span>
+            <a href="#">
+              <Icon
+              primary="size-8 bg-white text-right text-gray-600 p-1 rounded-full"
+              href=""
+              path="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab8}
+              alt="Hijaban"
+              class="object-cover object-center aspect-square"
+            />
+          </div>
+          <div class="px-6 py-10 z-20 absolute right-0 bottom-0 max-w-sm text-right">
+            <p class="text-right font-bols font-roboto pt-2 uppercase text-white">
+              7 COLORS AVAILABLE
+            </p>
+            <div class="flex flex-row gap-2 justify-end items-center">
+              <span class="font-bold font-roboto bg-yellow-300 text-right text-gray-600 py-1 px-4 rounded-sm">RP429.000</span>
+            <a href="#">
+              <Icon
+              primary="size-8 bg-white text-right text-gray-600 p-1 rounded-full"
+              href=""
+              path="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab9}
+              alt="Hijaban"
+              class="object-cover object-center aspect-square"
+            />
+          </div>
+          <div class="px-6 py-10 z-20 absolute right-0 bottom-0 max-w-sm text-right">
+            <p class="text-right font-bols font-roboto pt-2 uppercase text-white">
+              7 COLORS AVAILABLE
+            </p>
+            <div class="flex flex-row gap-2 justify-end items-center">
+              <span class="font-bold font-roboto bg-yellow-300 text-right text-gray-600 py-1 px-4 rounded-sm">RP429.000</span>
+            <a href="#">
+              <Icon
+              primary="size-8 bg-white text-right text-gray-600 p-1 rounded-full"
+              href=""
+              path="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab10}
+              alt="Hijaban"
+              class="object-cover object-center aspect-square"
+            />
+          </div>
+          <div class="px-6 py-10 z-20 absolute right-0 bottom-0 max-w-sm text-right">
+            <p class="text-right font-bols font-roboto pt-2 uppercase text-white">
+              7 COLORS AVAILABLE
+            </p>
+            <div class="flex flex-row gap-2 justify-end items-center">
+              <span class="font-bold font-roboto bg-yellow-300 text-right text-gray-600 py-1 px-4 rounded-sm">RP429.000</span>
+            <a href="#">
+              <Icon
+              primary="size-8 bg-white text-right text-gray-600 p-1 rounded-full"
+              href=""
+              path="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab11}
+              alt="Hijaban"
+              class="object-cover object-center aspect-square"
+            />
+          </div>
+          <div class="px-6 py-10 z-20 absolute right-0 bottom-0 max-w-sm text-right">
+            <p class="text-right font-bols font-roboto pt-2 uppercase text-white">
+              7 COLORS AVAILABLE
+            </p>
+            <div class="flex flex-row gap-2 justify-end items-center">
+              <span class="font-bold font-roboto bg-yellow-300 text-right text-gray-600 py-1 px-4 rounded-sm">RP429.000</span>
+            <a href="#">
+              <Icon
+              primary="size-8 bg-white text-right text-gray-600 p-1 rounded-full"
+              href=""
+              path="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab12}
+              alt="Hijaban"
+              class="object-cover object-center aspect-square"
+            />
+          </div>
+          <div class="px-6 py-10 z-20 absolute right-0 bottom-0 max-w-sm text-right">
+            <p class="text-right font-bols font-roboto pt-2 uppercase text-white">
+              7 COLORS AVAILABLE
+            </p>
+            <div class="flex flex-row gap-2 justify-end items-center">
+              <span class="font-bold font-roboto bg-yellow-300 text-right text-gray-600 py-1 px-4 rounded-sm">RP429.000</span>
+            <a href="#">
+              <Icon
+              primary="size-8 bg-white text-right text-gray-600 p-1 rounded-full"
+              href=""
+              path="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+            </a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="duration-1000 transform hover:scale-125 transition ease-linear before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-t before:from-gray-600 before:z-50"
+          >
+            <Image
+              src={Hijab13}
+              alt="Hijaban"
+              class="object-cover object-center aspect-square"
+            />
+          </div>
+          <div class="px-6 py-10 z-20 absolute right-0 bottom-0 max-w-sm text-right">
+            <p class="text-right font-bols font-roboto pt-2 uppercase text-white">
+              7 COLORS AVAILABLE
+            </p>
+            <div class="flex flex-row gap-2 justify-end items-center">
+              <span class="font-bold font-roboto bg-yellow-300 text-right text-gray-600 py-1 px-4 rounded-sm">RP429.000</span>
+            <a href="#">
+              <Icon
+              primary="size-8 bg-white text-right text-gray-600 p-1 rounded-full"
+              href=""
+              path="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <div class="w-full lg:w-1/2 order-last">
+          <Image
+            src={Hijab9}
+            alt="Hijab9"
+            class="aspect-video object-cover object-center rounded-md"
+          />
+        </div>
+        <div class="w-full lg:w-1/2 px-0 lg:px-12">
+          <h3
+            class="text-xl font-bold font-roboto bg-gray-600 text-white  w-max px-4 py-3">
+            VALUE BRAND</h3>
+          <h1
+            class="text-4xl md:text-6xl text-gray-600 font-serif tracking-wide">
+            HIJABAN</h1>
+          <hr class="my-2 border-2 border-gray-600" />
+          <div class="flex items-center mt-4 gap-3">
+            <Icon
+                primary="size-8"
+                href=""
+                path="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+              />
+            <p class="text-gray-600 w-full font-roboto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              delectus numquam minima nulla modi eius vel voluptatibus et odio
+              ut
+              ea, laboriosam corrupti autem.
+            </p>
+          </div>
+          <div class="flex items-center mt-4 gap-3">
+            <Icon
+                primary="size-8"
+                href=""
+                path="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+              />
+            <p class="text-gray-600 w-full font-roboto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              delectus numquam minima nulla modi eius vel voluptatibus et odio
+              ut
+              ea, laboriosam corrupti autem.
+            </p>
+          </div>
+          <div class="flex items-center mt-4 gap-3">
+            <Icon
+                primary="size-8"
+                href=""
+                path="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5"
+              />
+            <p class="text-gray-600 w-full font-roboto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+              delectus numquam minima nulla modi eius vel voluptatibus et odio
+              ut
+              ea, laboriosam corrupti autem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="bg-center bg-cover bg-fixed max-h-max relative before:content-[''] before:absolute before:h-full before:w-full before:bg-gray-600 before:mix-blend-multiply before:opacity-60"
+    style={`background-image:url(${Hijab10.src});`}>
+    <div class="max-w-6xl px-6 py-20 mx-auto text-center relative">
+      <h5
+        class="text-4xl font-serif text-white capitalize lg:text-6xl">
+        Kata Mereka
+      </h5>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 *:p-8 *:border *:rounded-lg *:bg-gradient-to-t *:from-gray-600">
+        <div>
+          <p class="leading-loose text-white text-left">
+            “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tempore quibusdam ducimus libero.”
+          </p>
+          <div class="flex items-center mt-4 -mx-2">
+              <Image
+              src={Hijab10}
+              alt="Hijab9"
+              class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-600 object-cover object-center"
+            />
+
+            <div class="mx-2">
+              <h1 class="font-semibold text-yellow-200">
+                Shepia</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="leading-loose text-white text-left">
+            “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tempore quibusdam ducimus libero.”
+          </p>
+          <div class="flex items-center mt-4 -mx-2">
+              <Image
+              src={Hijab13}
+              alt="Hijab9"
+              class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-600 object-cover object-center"
+            />
+
+            <div class="mx-2">
+              <h1 class="font-semibold text-yellow-200">
+                Hanna</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="leading-loose text-white text-left">
+            “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tempore quibusdam ducimus libero.”
+          </p>
+          <div class="flex items-center mt-4 -mx-2">
+              <Image
+              src={Hijab11}
+              alt="Hijab9"
+              class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-600 object-cover object-center"
+            />
+
+            <div class="mx-2">
+              <h1 class="font-semibold text-yellow-200">
+                Angelina</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="leading-loose text-white text-left">
+            “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tempore quibusdam ducimus libero.”
+          </p>
+          <div class="flex items-center mt-4 -mx-2">
+              <Image
+              src={Hijab14}
+              alt="Hijab9"
+              class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-600 object-cover object-center"
+            />
+
+            <div class="mx-2">
+              <h1 class="font-semibold text-yellow-200">
+                Shopia Lathifa</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="leading-loose text-white text-left">
+            “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tempore quibusdam ducimus libero.”
+          </p>
+          <div class="flex items-center mt-4 -mx-2">
+              <Image
+              src={Hijab15}
+              alt="Hijab9"
+              class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-600 object-cover object-center"
+            />
+
+            <div class="mx-2">
+              <h1 class="font-semibold text-yellow-200">
+                Camelia</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="leading-loose text-white text-left">
+            “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tempore quibusdam ducimus libero.”
+          </p>
+          <div class="flex items-center mt-4 -mx-2">
+              <Image
+              src={Hijab16}
+              alt="Hijab9"
+              class="object-cover mx-2 rounded-full w-14 shrink-0 h-14 ring-4 ring-gray-600 object-cover object-center"
+            />
+
+            <div class="mx-2">
+              <h1 class="font-semibold text-yellow-200">
+                Jessica</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div
+      class="container px-6 py-20 flex flex-col items-center mx-auto text-center">
+      <div class="text-center space-y-4">
+        <h2
+          class="text-4xl font-serif font-light tracking-tight text-gray-600 md:text-6xl capitalize">
+          hijaban Squad
+        </h2>
+        <p class="mt-4 text-gray-600 max-w-prose font-roboto">
+          Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Esse iure tenetur commodi ipsam error voluptate
+          magni.
+          Adipisci repudiandae ullam commodi
+          iusto reprehenderit suscipit facere voluptatem, eaque maiores minima.
+          Neque, officiis.
+        </p>
+        <button class="bg-gray-600 py-2 px-4 text-white font-bold">Follow
+          us in
+          Instagram</button>
+      </div>
+      <div class="grid gap-3 mt-8 grid-cols-2 lg:grid-cols-4 max-w-4xl mx-auto *:aspect-video *:rounded-md *:text-center *:overflow-hidden *:relative">
+        <div>
+            <Image
+            src={Hijab15}
+            alt="Hijab9"
+            class="object-cover object-center aspect-video rounded-md duration-1000 transform hover:scale-125 transition ease-linear"
+          />
+        </div>
+        <div>
+            <Image
+            src={Hijab16}
+            alt="Hijab9"
+            class="object-cover object-center aspect-video rounded-md duration-1000 transform hover:scale-125 transition ease-linear"
+          />
+        </div>
+        <div>
+            <Image
+            src={Hijab}
+            alt="Hijab9"
+            class="object-cover object-center aspect-video rounded-md duration-1000 transform hover:scale-125 transition ease-linear"
+          />
+        </div>
+        <div>
+            <Image
+            src={Hijab6}
+            alt="Hijab9"
+            class="object-cover object-center aspect-video rounded-md duration-1000 transform hover:scale-125 transition ease-linear"
+          />
+        </div>
+        <div>
+            <Image
+            src={Hijab10}
+            alt="Hijab9"
+            class="object-cover object-center aspect-video rounded-md duration-1000 transform hover:scale-125 transition ease-linear"
+          />
+        </div>
+        <div>
+            <Image
+            src={Hijab11}
+            alt="Hijab9"
+            class="object-cover object-center aspect-video rounded-md duration-1000 transform hover:scale-125 transition ease-linear"
+          />
+        </div>
+        <div>
+            <Image
+            src={Hijab13}
+            alt="Hijab9"
+            class="object-cover object-center aspect-video rounded-md duration-1000 transform hover:scale-125 transition ease-linear"
+          />
+        </div>
+        <div>
+            <Image
+            src={Hijab14}
+            alt="Hijab9"
+            class="object-cover object-center aspect-video rounded-md duration-1000 transform hover:scale-125 transition ease-linear"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <div class="w-full lg:w-1/2 order-last lg:order-none">
+          <Image
+          src={Hijab14}
+          alt="Hijab9"
+          class="object-cover object-center aspect-video rounded-md"
+        />
+        </div>
+        <div class="w-full lg:w-1/2 px-0 lg:px-12">
+          <h3
+            class="text-xl font-bold font-roboto bg-gray-600 text-white  w-max px-4 py-3">
+            MAKE YOUR</h3>
+          <h1
+            class="text-4xl md:text-6xl text-gray-600 font-serif tracking-wide">
+            Hijaban Of The Day</h1>
+          <hr class="my-2 border-2 border-gray-600" />
+          <p class="mt-4 font-roboto text-gray-600">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam
+            temporibus enim expedita aperiam
+            mollitia iure consectetur dicta tenetur, porro consequuntur saepe
+            accusantium consequatur.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+	<Footer title="Hijaban" body="Sebuah website untuk para wanita muslim yang suka dengan fashion hijab" href="/" primary="bg-gray-600 text-white" iconSize="size-6" listIcon={[
+		{
+		  iconPath: "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z",
+		  url: "https://google.com"
+		},
+		{
+		  iconPath: "M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z",
+		  url: "https://instagram.com"
+		},
+		{
+		  iconPath: "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z",
+		  url: "https://github.com"
+		},
+	  ]},
+	  links={[
+        {
+            category: 'About',
+            items: [
+                { label: 'Hijab Today', href: '#' },
+                { label: 'Community', href: '#' },
+                { label: 'Careers', href: '#' },
+            ],
+        },
+        {
+            category: 'Blog',
+            items: [
+                { label: 'Hijaban', href: '#' },
+                { label: 'Traveling', href: '#' },
+                { label: 'Fotografi', href: '#' },
+            ],
+        },
+        {
+            category: 'Products',
+            items: [
+                { label: 'Pashmina', href: '#' },
+                { label: 'Khimar', href: '#' },
+                { label: 'Instan', href: '#' },
+            ],
+        },
+        {
+            category: 'Contact',
+            items: [
+                { label: '+1 526 654 8965', href: 'tel:+15266548965' },
+                { label: 'hijaban@email.com', href: 'hijaban:example@email.com' },
+            ],
+        },
+    ]} 
+    hiddenLinks={[]} />
+</Landing>

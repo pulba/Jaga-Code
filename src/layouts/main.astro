@@ -1,0 +1,16 @@
+---
+import Seo from "../components/seo.astro";
+import "@fontsource/geist-sans";
+import '@fontsource/lugrasimo';
+const { title, desc } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <Seo title={title} desc={desc} />
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

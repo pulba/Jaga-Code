@@ -1,0 +1,392 @@
+---
+import Landing from "../../layouts/landing.astro";
+import Footer from "../../components/footer.astro";
+import Icon from "../../components/icon.astro";
+import { Image, getImage } from "astro:assets";
+import cover from "../../assets/travel1.webp";
+import travel1 from "../../assets/travel2.webp";
+import travel2 from "../../assets/travel3.webp";
+import travel3 from "../../assets/travel4.webp";
+import travel4 from "../../assets/travel5.webp";
+import travel5 from "../../assets/travel6.webp";
+import travel6 from "../../assets/travel7.webp";
+import travel7 from "../../assets/travel8.webp";
+import travel8 from "../../assets/travel9.webp";
+import travel9 from "../../assets/travel10.webp";
+import travel10 from "../../assets/travel11.webp";
+import travel11 from "../../assets/travel12.webp";
+import travel12 from "../../assets/travel13.webp";
+import travel13 from "../../assets/travel14.webp";
+import travel14 from "../../assets/travel15.webp";
+import travel15 from "../../assets/travel16.webp";
+import travel16 from "../../assets/travel17.webp";
+import travel17 from "../../assets/travel18.webp";
+import travel18 from "../../assets/travel19.webp";
+import travel19 from "../../assets/travel20.webp";
+import travel20 from "../../assets/travel21.webp";
+import travel21 from "../../assets/travel22.webp";
+import travel22 from "../../assets/travel23.webp";
+import travel23 from "../../assets/travel24.webp";
+import travel24 from "../../assets/travel25.webp";
+import travel25 from "../../assets/travel26.webp";
+const optimizedBackground = await getImage({ src: cover, format: "webp" });
+export const frontmatter = {
+  title: "Landing Page",
+  slug: "/landing/traveler",
+  image: "/src/assets/porto4.webp",
+};
+
+---
+<Landing>
+  <section class="w-full h-screen flex bg-cover bg-center relative before:content-[''] before:absolute before:h-full before:w-full before:bg-black before:mix-blend-multiply before:opacity-70"
+    style={`background-image:url(https://images.unsplash.com/photo-1520175480921-4edfa2983e0f?q=80&w=1467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);`}>
+    <div
+            class="relative container h-screen px-6 mx-auto py-16 flex flex-col justify-center z-20">
+            <div class="text-center flex flex-col justify-center">
+              <h1
+                class="text-5xl font-bold text-white lg:text-8xl tracking-widest">
+                TRAVEL
+              </h1>
+              <p class="mt-2 text-yellow-300 font-bold">Book Flights, Hotels and
+                Holiday Packages</p>
+            </div>
+          </div>
+  </section>
+  <section>
+    <div class="container px-6 mx-auto">
+      <div class="flex flex-col lg:flex-row pb-20">
+        <div class="w-full lg:w-1/5 flex items-center justify-center py-20">
+          <h3 class="text-3xl font-geist font-bold text-blue-950">BROWSE LOCATIONS
+          </h3>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 w-full lg:w-4/5 translate-0 lg:-translate-y-10 *:w-full *:flex *:bg-cover *:bg-center *:relative *:before:content-[''] *:before:absolute *:before:h-full *:before:w-full *:before:bg-black *:before:mix-blend-multiply *:before:opacity-60 hover:*:before:bg-red-500">
+          <div style={`background-image:url(${travel1.src});`}>
+              <div class="relative container h-80 px-6 mx-auto py-16">
+                <div class="md:max-w-prose">
+                  <h1 class="text-xl font-bold text-white font-geist">
+                    Maldives Beach, Maladewa</h1>
+                </div>
+              </div>
+          </div>
+          <div style={`background-image:url(${travel2.src});`}>
+              <div class="relative container h-80 px-6 mx-auto py-16">
+                <div class="md:max-w-prose">
+                  <h1 class="text-xl font-bold text-white font-geist">
+                    Bali Beach, Indonesia</h1>
+                </div>
+              </div>
+          </div>
+          <div style={`background-image:url(${travel5.src});`}>
+              <div class="relative container h-80 px-6 mx-auto py-16">
+                <div class="md:max-w-prose">
+                  <h1 class="text-xl font-bold text-white font-geist">
+                    Chiang Mai, Thailand</h1>
+                </div>
+              </div>
+          </div>
+          <div style={`background-image:url(${travel4.src});`}>
+              <div class="relative container h-80 px-6 mx-auto py-16">
+                <div class="md:max-w-prose">
+                  <h1 class="text-xl font-bold text-white font-geist">
+                    Copacabana Beach Rio de Janeiro</h1>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 pb-20 mx-auto">
+      <div class="flex flex-col lg:flex-row">
+        <div class="w-full lg:w-1/3 p-3 space-y-5 font-geist">
+          <h4 class="font bold text-2xl">Them Best Great Tourism is
+            Right Here
+          </h4>
+          <h6><span class="font bold text-lg">Better Travel
+              Packages</span> like
+            any other</h6>
+          <p>Dummy text ever since the 1500s, when an unknown printer took. A
+            galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries. Dummy text ever since the 1500s,
+            when an unknown printer took. A galley of type.</p>
+          <button
+            class="py-4 px-4 md:px-6 mt-6 tracking-widest text-blue-950 border-2 border-blue-950 hover:bg-blue-950 hover:text-white">JOIN
+            ADVENTURE</button>
+        </div>
+        <div
+          class="w-full lg:w-1/3 p-3 text-center font-geist text-blue-950 overflow-hidden">
+          <Image src={travel22} alt="traveller" class="animate-[spin_7s_linear_infinite] relative z-10" />
+          <div class="-translate-y-20">
+            <h6 class="font-bold font-geist text-xl">Travel
+              through the Amazing
+            </h6>
+            <h5 class="font-bold text-7xl md:text-8xl uppercase">World</h5>
+            <h5 class="text-xl uppercase">GREATER TOURISM
+            </h5>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/3 p-3 font-geist space-y-5">
+          <h4 class="font bold text-2xl text-blue-950">Our Awards
+          </h4>
+          <p>Dummy text ever since the 1500s, when an unknown printer took. A
+            galley of type and scrambled it to make a type specimen book. It has
+            survived not only five centuries. Dummy text ever since the 1500s,
+            when an unknown printer took. A galley of type. Scrambled it to make
+            a type specimen book.
+          </p>
+          <div class="flex overflow-hidden">
+            <Image src={travel25} alt="traveller" class="w-1/3" />
+            <Image src={travel24} alt="traveller" class="w-1/3" />
+            <Image src={travel23} alt="traveller" class="w-1/3" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="w-full h-1/2 flex bg-cover bg-center relative before:content-[''] before:absolute before:h-full before:w-full before:bg-black  before:opacity-60"
+    style={`background-image:url(${travel16.src});`}>
+    <div class="container px-6 py-20 mx-auto relative">
+      <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="flex flex-col space-y-5 p-5 font-geist text-white">
+            <Image src={travel21} alt="traveller" class="w-16 transform hover:-scale-x-100" />
+          <h4 class="font-bold pt-5">FLIGHT TICKETS
+          </h4>
+          <p>Dummy text ever since the very 1500s, when an unknown printer took.
+          </p>
+        </div>
+        <div class="flex flex-col space-y-5 p-5 font-geist text-white">
+          <Image src={travel18} alt="traveller" class="w-16 transform hover:-scale-x-100" />
+          <h4 class="font-bold pt-5">FLIGHT TICKETS
+          </h4>
+          <p>Dummy text ever since the very 1500s, when an unknown printer took.
+          </p>
+        </div>
+        <div class="flex flex-col space-y-5 p-5 font-geist text-white">
+          <Image src={travel20} alt="traveller" class="w-16 transform hover:-scale-x-100" />
+          <h4 class="font-bold pt-5">FLIGHT TICKETS
+          </h4>
+          <p>Dummy text ever since the very 1500s, when an unknown printer took.
+          </p>
+        </div>
+        <div class="flex flex-col space-y-5 p-5 font-geist text-white">
+          <Image src={travel19} alt="traveller" class="w-16 transform hover:-scale-x-100" />
+          <h4 class="font-bold pt-5">FLIGHT TICKETS
+          </h4>
+          <p>Dummy text ever since the very 1500s, when an unknown printer took.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 py-20 mx-auto">
+      <h1 class="font-bold font-geist text-2xl text-blue-950 mb-10">POPULAR
+        PACKAGES
+      </h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 *:border-2 *:rounded-lg *:shadow-xl">
+        <div>
+          <Image src={travel1} alt="traveller" class="aspect-square bg-cover bg-center" />
+          <div class="relative container px-6 py-10 mx-auto">
+            <div class="md:max-w-prose space-y-2">
+              <h1 class="font-bold text-blue-950 font-geist">
+                Maldives in 5 Nights with Flights</h1>
+              <p>5 Days</p>
+              <h6>$ <span
+                  class="text-xl font-bold font-geist text-blue-950">55</span>
+                /person</h6>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Image src={travel2} alt="traveller" class="aspect-square bg-cover bg-center" />
+          <div class="relative container px-6 py-10 mx-auto">
+            <div class="md:max-w-prose space-y-2">
+              <h1 class="font-bold text-blue-950 font-geist">
+                Bali Indonesia in 5 Nights with Flights</h1>
+              <p>5 Days</p>
+              <h6>$ <span
+                  class="text-xl font-bold font-geist text-blue-950">55</span>
+                /person</h6>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Image src={travel5} alt="traveller" class="aspect-square bg-cover bg-center" />
+          <div class="relative container px-6 py-10 mx-auto">
+            <div class="md:max-w-prose space-y-2">
+              <h1 class="font-bold text-blue-950 font-geist">
+                Doi Inthanon Thai Special 7 Days</h1>
+              <p>5 Days</p>
+              <h6>$ <span
+                  class="text-xl font-bold font-geist text-blue-950">55</span>
+                /person</h6>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Image src={travel3} alt="traveller" class="aspect-square bg-cover bg-center" />
+          <div class="relative container px-6 py-10 mx-auto">
+            <div class="md:max-w-prose space-y-2">
+              <h1 class="font-bold text-blue-950 font-geist">
+                Magical London Bridge with Neil Stay</h1>
+              <p>5 Days</p>
+              <h6>$ <span
+                  class="text-xl font-bold font-geist text-blue-950">55</span>
+                /person</h6>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Image src={travel4} alt="traveller" class="aspect-square bg-cover bg-center" />
+          <div class="relative container px-6 py-10 mx-auto">
+            <div class="md:max-w-prose space-y-2">
+              <h1 class="font-bold text-blue-950 font-geist">
+                A Trip to Rio de Janeiro 3 Days 2 Nights</h1>
+              <p>3 Days</p>
+              <h6>$ <span
+                  class="text-xl font-bold font-geist text-blue-950">55</span>
+                /person</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container px-6 lg:px-20 py-20 mx-auto">
+      <div class="flex flex-col lg:flex-row h-full relative">
+        <div
+          class="w-full lg:w-1/3 h-96 lg:h-auto flex items-center justify-center text-center font-geist text-white bg-cover bg-center relative before:content-[''] before:absolute before:h-full before:w-full before:bg-gradient-to-r before:from-cyan-950 before:to-blue-950 before:opacity-60"
+          style={`background-image:url(${travel15.src});`}
+          data-splide-interval="1000">
+          <div class="relative p-6 mx-auto">
+            <div class="space-y-5">
+              <h1 class="text-2xl font-bold text-white font-geist">
+                HAVE AN ADVENTURE IN MIND?</h1>
+              <p>Dummy text ever since the 1500s, when an unknown printer took.
+                A galley of type and scrambled it to make.</p>
+              <h6 class="font-bold text-2xl">STARTS FROM</h6>
+              <h6 class="font-bold text-2xl">$699</h6>
+              <button
+                class="p-3 border-2 border-white tracking-wides hover:bg-white hover:text-blue-950">START
+                A
+                TRIP</button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-2/3 grid grid-cols md:grid-cols-2">
+          <div class="w-full h-96 md:h-full flex bg-cover bg-center"
+            style={`background-image:url(${travel14.src});`}
+            data-splide-interval="1000">
+            <div class="relative w-full p-6">
+              <button
+                class="p-3 bg-white text-blue-950 tracking-wides font-bold hover:text-white hover:bg-blue-950 absolute bottom-5 left-5">Safari(1
+                Activities)</button>
+            </div>
+          </div>
+          <div
+            class="w-full h-96 md:h-full flex bg-cover bg-center relative before:content-[''] before:absolute before:h-full before:w-full before:bg-black before:mix-blend-multiply before:opacity-60"
+            style={`background-image:url(${travel13.src});`}
+            data-splide-interval="1000">
+            <div class="relative container h-80 p-6 mx-auto py-16">
+              <div class="md:max-w-prose">
+                <button
+                  class="p-3 bg-white text-blue-950 tracking-wides font-bold hover:text-white hover:bg-blue-950 absolute bottom-5 left-5">Mountain(1
+                  Activities)</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full h-96 md:h-full order-last md:order-none flex bg-cover bg-center relative before:content-[''] before:absolute before:h-full before:w-full before:bg-black before:mix-blend-multiply before:opacity-60"
+            style={`background-image:url(${travel12.src});`}
+            data-splide-interval="1000">
+            <div class="relative container h-80 p-6 mx-auto py-16">
+              <div class="md:max-w-prose">
+                <button
+                  class="p-3 bg-white text-blue-950 tracking-wides font-bold hover:text-white hover:bg-blue-950 absolute bottom-5 left-5">Paragliding(1
+                  Activities)</button>
+              </div>
+            </div>
+          </div>
+          <div class="w-full h-96 md:h-full flex bg-cover bg-center"
+            style={`background-image:url(${travel11.src});`}
+            data-splide-interval="1000">
+            <div class="relative container h-80 p-6 mx-auto py-16">
+              <div class="md:max-w-prose">
+                <button
+                  class="p-3 bg-white text-blue-950 tracking-wides font-bold hover:text-white hover:bg-blue-950 absolute bottom-5 left-5">Hikking(2
+                  Activities)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	<Footer title="Traveller" body="Book Flights, Hotels and Holiday Packages" href="/" primary="bg-blue-950 text-white" iconSize="size-6" listIcon={[
+		{
+		  iconPath: "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z",
+		  url: "https://google.com"
+		},
+		{
+		  iconPath: "M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z",
+		  url: "https://instagram.com"
+		},
+		{
+		  iconPath: "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z",
+		  url: "https://github.com"
+		},
+	  ]},
+	  links={[
+        {
+            category: 'VACATION PACKAGE',
+            items: [
+                { label: 'Las Vegas ', href: '#' },
+                { label: 'Orlando ', href: '#' },
+                { label: 'New York ', href: '#' },
+                { label: 'Miami ', href: '#' },
+                { label: 'San Diego ', href: '#' },
+                { label: 'San Francisco ', href: '#' },
+                { label: 'Los Angeles ', href: '#' },
+            ],
+        },
+        {
+            category: 'BOOKING TICKETS',
+            items: [
+                { label: 'Sydney Hotels', href: '#' },
+                { label: 'Boston Hotels', href: '#' },
+                { label: 'Walt Disney World', href: '#' },
+                { label: 'Miami Vacations', href: '#' },
+                { label: 'Las Vegas Hotels', href: '#' },
+                { label: 'Maui Hotels', href: '#' },
+                { label: 'Maui Hotels', href: '#' },
+                { label: 'New York Hotels', href: '#' },
+                { label: 'San Francisco Hotels', href: '#' },
+            ],
+        },
+        {
+            category: 'FLIGHT TICKETS',
+            items: [
+                { label: 'Flights to New York', href: '#' },
+                { label: 'Flights to Las Vegas', href: '#' },
+                { label: 'New York Vacations', href: '#' },
+                { label: 'Flights to Los Angeles', href: '#' },
+                { label: 'Flights to Orlando', href: '#' },
+                { label: 'Flights to Miami', href: '#' },
+                { label: 'Flights to Francisco', href: '#' },
+                { label: 'Flights to Chicago', href: '#' },
+            ],
+        },
+        {
+            category: 'Contact',
+            items: [
+                { label: '+1 526 654 8965', href: 'tel:+15266548965' },
+                { label: 'traveller@email.com', href: 'traveller:example@email.com' },
+            ],
+        },
+    ]} 
+    hiddenLinks={[]} />
+    
+</Landing>

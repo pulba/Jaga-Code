@@ -1,0 +1,66 @@
+---
+import Button from "./button.astro"
+import Logo from "./logo.astro"
+---
+
+<header id="navbar" class="bg-blue-800 text-white fixed top-0 shadow-lg w-full z-20">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="/">
+        <Logo/>
+      </a>
+      <nav class="hidden md:flex space-x-8 *:font-bold *:menu-item hover:*:text-orange-400 *:transition *:duration-500">
+        <a href="/">Home</a>
+        <a href="/porto">Portofolio</a>
+        <a href="/about">Tentang Kami</a>
+        <a href="/faq">FAQ</a>
+      </nav>
+      <Button title="Order Sekarang" href="https://wa.me/6281532094978?text=Halo kak! Saya mau buat website _[isi jenis webiste]_" path="" primary="hidden md:block bg-orange-400 text-white rounded-lg" />
+      <button id="hamburger" class="md:hidden focus:outline-none">
+        <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8 hidden">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  
+    <nav id="mobile-menu" class="relative z-50 h-full md:hidden hidden h-screen pt-12 px-6 bg-blue-900 space-y-3 *:py-3 *:text-base *:font-medium *:border-gray-400 *:border-b hover:*:bg-blue-800 *:transition *:duration-300">
+      <a href="/" class="menu-item block">Home</a>
+      <a href="/about" class="menu-item block">Tentang Kami</a>
+      <a href="/porto" class="menu-item block">Portofolio</a>
+      <a href="/faq" class="menu-item block">FAQ</a>
+      <Button title="Order Sekarang" href="https://wa.me/6281532094978?text=Halo kak! Saya mau buat website _[isi jenis webiste]_" path="" primary="w-max mx-auto pt-20 bg-orange-400 text-white rounded-lg" />
+    </nav>
+  </header>
+  
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+    const menuItems = document.querySelectorAll('.menu-item');
+  
+    let isOpen = false;
+  
+    hamburger.addEventListener('click', () => {
+      isOpen = !isOpen;
+      mobileMenu.classList.toggle('hidden');
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    });
+  
+    window.addEventListener('DOMContentLoaded', () => {
+      const currentPath = window.location.pathname;
+      menuItems.forEach((item) => {
+        if (item.getAttribute('href') === currentPath) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    const navbar: HTMLElement | null = document.getElementById('navbar');
+
+  </script>
+  

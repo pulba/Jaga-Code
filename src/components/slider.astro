@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import Porto1 from "../assets/porto1.webp"
+import Porto2 from "../assets/porto2.webp"
+import Porto3 from "../assets/porto3.webp"
+import Porto4 from "../assets/porto4.webp"
+import Porto5 from "../assets/porto5.webp"
+import Porto6 from "../assets/porto6.webp"
+---
+<div class="relative w-full overflow-hidden max-w-screen-lg mx-auto">
+    <div class="flex slider *:min-w-full *:lg:min-w-1/4 *:md:min-w-1/3 *:sm:min-w-1/2 *:mx-auto">
+      <div class="">
+        <Image src={Porto1} alt="porto1" class="aspect-video w-full object-cover object-top" />
+      </div>
+      <div class="">
+        <Image src={Porto2} alt="porto1" class="aspect-video w-full object-cover object-top" />
+      </div>
+      <div class="">
+        <Image src={Porto3} alt="porto1" class="aspect-video w-full object-cover object-top" />
+      </div>
+      <div class="">
+        <Image src={Porto4} alt="porto1" class="aspect-video w-full object-cover object-top" />
+      </div>
+      <div class="">
+        <Image src={Porto5} alt="porto1" class="aspect-video w-full object-cover object-top" />
+      </div>
+      <div class="">
+        <Image src={Porto6} alt="porto1" class="aspect-video w-full object-cover object-top" />
+      </div>
+    </div>
+</div>
+
+<script>
+   document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slider > div');
+  const slideWidth = slides[0].clientWidth;
+  let slideIndex = 0;
+
+  function slide() {
+    slideIndex++;
+    slider.style.transition = "transform 0.5s ease-in-out";
+    slider.style.transform = `translateX(-${slideWidth * slideIndex}px)`;
+    
+    if (slideIndex >= slides.length ) { 
+      setTimeout(() => {
+        slider.style.transition = "none";
+        slideIndex = 0;
+        slider.style.transform = `translateX(0)`;
+      }, 500);
+    }
+  }
+
+  setInterval(slide, 3000);
+});
+
+
+
+</script>  
