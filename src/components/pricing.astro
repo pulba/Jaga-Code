@@ -32,12 +32,19 @@ const {
 ---
 
 <!-- Component HTML -->
-<div class={`drop-shadow-xl flex flex-col justify-between ${primaryClass}`}>
-    <div class={`${titleClass}`}>
-        <h2 class={`text-2xl font-bold font-geist `}>{title}</h2>
-        <p class="mt-6 mb-0">{body}</p>
+<div class={`flex flex-col justify-between h-max py-6 bg-blue-900 ${primaryClass}`}>
+    <div class={`${titleClass} rounded-t-lg`}>
+        <h2 class={`text-2xl font-bold font-geist`}>{title}</h2>
+        <h2 class="font-bold text-3xl mt-3">{price}</h2>
+        <p>{body}</p>
+        <a href={href}>
+            <button class={`${buttonClass} font-geist font-bold text-center w-full mx-auto mt-6 px-6 py-2`}
+                >{titleButton}</button
+            >
+        </a>
     </div>
-    <div class={`font-geist ${priceClass} my-2`}>
+    <hr class="h-px bg-gray-400 border-0 mx-6">
+    <div class={`font-geist ${priceClass} my-2 text-white`}>
         {
             listItems.map((item, index) => (
                 <p class="mt-2 mb-0 flex gap-2">
@@ -47,7 +54,7 @@ const {
                         viewBox="0 0 24 24"
                         stroke-width="2"
                         stroke="currentColor"
-                        class={`${iconSize} text-blue-900 mb-2 ${!iconPath ? "hidden" : ""}`}
+                        class={`${iconSize} mb-2 ${!iconPath ? "hidden" : ""}`}
                     >
                         <path
                             stroke-linecap="round"
@@ -59,14 +66,5 @@ const {
                 </p>
             ))
         }
-        <h2 class="m-0 font-bold mt-6 text-center">Mulai dari</h2>
-        <h2 class="m-0 font-bold text-3xl text-center">{price}</h2>
-    </div>
-    <div class="text-center mb-5">
-        <a href={href}>
-            <button class={`${buttonClass} font-geist font-bold text-center my-6 mx-auto px-6 py-3`}
-                >{titleButton}</button
-            >
-        </a>
     </div>
 </div>

@@ -5,7 +5,6 @@ import Button from "../components/button.astro";
 import Pricing from "../components/pricing.astro";
 import bgsc from "../assets/img3.webp";
 import { Image, getImage } from "astro:assets";
-import Footer from "../components/footer.astro";
 import Cover from "../assets/cover.webp";
 import Wa from "../components/wa.astro";
 interface Frontmatter {
@@ -19,7 +18,9 @@ interface AstroModule {
   default: any; // Komponen Astro
 }
 const optimizedBackground = await getImage({ src: Cover, format: "webp" });
-const landingFiles = import.meta.glob<AstroModule>('./landing/*.astro', { eager: true });
+const landingFiles = import.meta.glob('./landing/*.astro', { eager: true });
+
+
 const blogFiles = import.meta.glob<AstroModule>('./blog/*.astro', { eager: true });
 const companyFiles = import.meta.glob<AstroModule>('./company/*.astro', { eager: true });
 const businessFiles = import.meta.glob<AstroModule>('./business/*.astro', { eager: true });
@@ -159,7 +160,7 @@ const businessComponents = getComponents(businessFiles);
 					title="Cepat & Profesional"
 					titlec="text-md text-center [&>h2]:text-xl"
 					body="Website Cepat & Profesional Sesuai Kebutuhan Anda!"
-					primary="py-12 flex-col items-center bg-white text-blue-900 rounded-xl hover:bg-blue-900 hover:text-white transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700 transition-color ease-linear duration-700"
 					size="size-12"
 					icon="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
 				/>
@@ -167,7 +168,7 @@ const businessComponents = getComponents(businessFiles);
 					title="Desain Elegan & Responsif"
 					titlec="text-md text-center [&>h2]:text-xl"
 					body="Desain elegan dan responsif yang memukau di semua perangkat."
-					primary="py-12 flex-col items-center bg-white text-blue-900 rounded-xl hover:bg-blue-900 hover:text-white transition-color ease-linear duration-700"
+					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
 					size="size-12"
 					icon="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
 				/>
@@ -175,7 +176,7 @@ const businessComponents = getComponents(businessFiles);
 					title="Anti Lemot & Seo Friendly"
 					titlec="text-md text-center [&>h2]:text-xl"
 					body="Anti lemot dan SEO friendly, siap menempati halaman teratas Google."
-					primary="py-12 flex-col items-center bg-white text-blue-900 rounded-xl hover:bg-blue-900 hover:text-white transition-color ease-linear duration-700"
+					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
 					size="size-12"
 					icon="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
 				/>
@@ -183,7 +184,7 @@ const businessComponents = getComponents(businessFiles);
 					title="Website Mudah Dikelola"
 					titlec="text-md text-center [&>h2]:text-xl"
 					body="Mudah dikelola tanpa ribet, bahkan untuk pemula."
-					primary="py-12 flex-col items-center bg-white text-blue-900 rounded-xl hover:bg-blue-900 hover:text-white transition-color ease-linear duration-700"
+					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
 					size="size-12"
 					icon="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
 				/>
@@ -191,7 +192,7 @@ const businessComponents = getComponents(businessFiles);
 					title="Tim Berpengalaman"
 					titlec="text-md text-center [&>h2]:text-xl"
 					body="Dikerjakan oleh tim berpengalaman di bidangnya."
-					primary="py-12 flex-col items-center bg-white text-blue-900 rounded-xl hover:bg-blue-900 hover:text-white transition-color ease-linear duration-700"
+					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
 					size="size-12"
 					icon="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
 				/>
@@ -199,7 +200,7 @@ const businessComponents = getComponents(businessFiles);
 					title="Konsultasi Gratis"
 					titlec="text-md text-center [&>h2]:text-xl"
 					body="Konsultasi gratis – wujudkan website impian Anda sekarang!"
-					primary="py-12 flex-col items-center bg-white text-blue-900 rounded-xl hover:bg-blue-900 hover:text-white transition-color ease-linear duration-700"
+					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
 					size="size-12"
 					icon="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
 				/>
@@ -284,7 +285,7 @@ const businessComponents = getComponents(businessFiles);
 			  </fieldset> -->
 			  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12 w-full max-w-screen-lg mx-auto">
 				{landingComponents.map(({ component: Component, title, slug, image }) => (
-				<div class="text-center font-bold font-geist rounded-lg border border-gray-200 shadow-2xl">
+				<div class="text-center font-bold font-geist rounded-lg border border-gray-300 shadow-xl">
 				  <a href={slug} target="_blank">
 					<img src={image} alt={`Image for ${title}`} class="aspect-square object-cover object-top rounded-t-lg hover:object-bottom ease-linear transition-all duration-[3000ms] delay-100" />
 				  </a>
@@ -313,14 +314,14 @@ const businessComponents = getComponents(businessFiles);
 				</h6>
 			</div>
 			<div
-				class="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mx-auto *:w-full *:h-full *:font-geist *:border *:border-gray-200 *:rounded-lg *:shadow-lg"
+				class="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center mx-auto *:w-full *:h-max *:font-geist *:border *:border-gray-200 *:rounded-lg *:shadow-lg"
 			>
 				<Pricing
 					title="Landing Page"
 					titleClass="p-8 text-white bg-blue-900 py-6 capitalize"
 					priceClass="px-8 [&>h2]:text-blue-900 [&>h2]:capitalize"
 					titleButton="Get Started"
-					body="Cocok untuk bisnis pemula yang ingin memulai berjualan secara online."
+					body="Cocok untuk bisnis online pemula."
 					primaryClass="[&>p]:px-8 [&>p]:py-4"
 					price="Rp650.000"
 					iconSize="size-6"
@@ -331,13 +332,9 @@ const businessComponents = getComponents(businessFiles);
 						"Desain Responsif",
 						"Akses WP Admin",
 						"Revisi 1X Konten",
-						"Dukungan Yoast SEO",
-						"Free SSL",
-						"Gratis Maintenance setiap bulan",
-						"Free 1 akun email bisnis",
 						"Pengerjaan 3 hari kerja",
 					]}
-					buttonClass="bg-blue-900 text-white rounded-full px-12"
+					buttonClass="bg-orange-400 text-white rounded-full px-12"
 					iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
 				/>
 				<Pricing
@@ -345,7 +342,7 @@ const businessComponents = getComponents(businessFiles);
 					titleClass="p-8 text-white bg-blue-900 py-6 capitalize"
 					priceClass="px-8 [&>h2]:text-blue-900 [&>h2]:capitalize"
 					titleButton="Get Started"
-					body="Cocok untuk Meningkatkan Kredibilitas dan Menjangkau Lebih Banyak Pembaca."
+					body="Cocok untuk Content Criter."
 					primaryClass=""
 					price="Rp1.799.000"
 					iconSize="size-6"
@@ -358,19 +355,17 @@ const businessComponents = getComponents(businessFiles);
 						"Revisi 5X Konten",
 						"Dukungan Yoast SEO",
 						"Free SSL",
-						"Gratis Maintenance setiap bulan",
-						"Free 1 akun email bisnis",
 						"Pengerjaan 14 Hari kerja",
 					]}
-					buttonClass="bg-blue-900 text-white rounded-full px-12"
+					buttonClass="bg-orange-400 text-white rounded-full px-12"
 					iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
 				/>
 				<Pricing
 					title="Company Profile"
-					titleClass="p-8 text-white bg-orange-400 py-6 capitalize"
+					titleClass="p-8 text-white py-6 capitalize"
 					priceClass="px-8 [&>h2]:text-blue-900 [&>h2]:capitalize"
 					titleButton="Get Started"
-					body="Company profile untuk meningkatkan kredibilitas dan membuat perusahaan Anda."
+					body="Perluas jangkauan perusahaan."
 					primaryClass="[&>p]:px-8 [&>p]:py-4"
 					price="Rp2.500.000"
 					iconSize="size-6"
@@ -387,7 +382,7 @@ const businessComponents = getComponents(businessFiles);
 						"Free 1 akun email bisnis",
 						"Pengerjaan 14 Hari kerja",
 					]}
-					buttonClass="bg-blue-900 text-white rounded-full px-12"
+					buttonClass="bg-orange-400 text-white rounded-full px-12"
 					iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
 				/>
 				<Pricing
@@ -395,7 +390,7 @@ const businessComponents = getComponents(businessFiles);
 					titleClass="p-8 text-white bg-blue-900 py-6 capitalize"
 					priceClass="px-8 [&>h2]:text-blue-900 [&>h2]:capitalize"
 					titleButton="Get Started"
-					body="Cocok untuk bisnis atau UKM yang menjual barang atau jasa kepada konsumen secara langsung."
+					body="Cocok untuk bisnis UMKM."
 					primaryClass=""
 					price="Rp2.999.000"
 					iconSize="size-6"
@@ -407,12 +402,11 @@ const businessComponents = getComponents(businessFiles);
 						"Akses WP Admin",
 						"Revisi 5X Konten",
 						"Dukungan Yoast SEO",
-						"Free SSL",
 						"Gratis Maintenance setiap bulan",
 						"Free 1 akun email bisnis",
 						"Pengerjaan 14 Hari kerja",
 					]}
-					buttonClass="bg-blue-900 text-white rounded-full px-12"
+					buttonClass="bg-orange-400 text-white rounded-full px-12"
 					iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
 				/>
 			</div>
