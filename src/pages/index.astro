@@ -41,14 +41,14 @@ const businessComponents = getComponents(businessFiles);
 ---
 
 <Home title="" desc="Home jasa pembuatan website">
-	<section class="relative bg-blue-900 bg-center bg-cover rounded-b-[9rem] before:content-[''] before:absolute before:w-full before:h-full before:bg-blue-950 before:mix-blend-multiply" style={`background-image: url('${optimizedBackground.src}')`}>
+	<section class="relative bg-blue-900 bg-center bg-cover md:rounded-b-[9rem] before:content-[''] before:absolute before:w-full before:h-full before:bg-blue-950 before:md:rounded-b-[9rem] before:mix-blend-multiply" style={`background-image: url('${optimizedBackground.src}')`}>
 		<div class="container relative px-6 mx-auto">
 			<div class="flex flex-col items-center justify-center mx-auto min-h-screen max-w-screen-md w-full py-12">
 				<div class="font-geist text-blue-50 text-center space-y-4">
-					<h1 class="text-balance text-2xl font-geist font-bold tracking-wide md:leading-[3rem] sm:text-4xl">Bangun Bisnismu, Kami Bangun Websitenya, <br /><span style="background-color: #f97316; padding: 0.25rem 0.75rem; border-radius: 0.5rem; display: inline; box-decoration-break: clone; -webkit-box-decoration-break: clone;">Dijamin bikin bisnis makin Melesat!</span>
+					<h1 class="text-balance text-2xl font-geist font-bold tracking-wide md:leading-[3rem] sm:text-4xl">Bangun Bisnismu, <br> Kami Bangun Websitenya <br /><span class="text-sm sm:text-4xl capitalize" style="background-color: #f97316; padding: 0.25rem 0.75rem; border-radius: 0.5rem; display: inline; box-decoration-break: clone; -webkit-box-decoration-break: clone;">buat bisnismu makin Melesat!</span>
 					</h1>
 					<p
-						class="mt-8 text-pretty text-lg font-medium sm:text-xl/8 max-w-2xl mx-auto"
+						class="mt-8 text-pretty text-sm lg:text-lg max-w-2xl mx-auto"
 					>
 					Kita bantu bikin website yang nggak cuma keren, tapi juga gampang dipakai dan pas banget buat bisnismu.
 					</p>
@@ -56,9 +56,9 @@ const businessComponents = getComponents(businessFiles);
 						class="mt-10 flex flex-col sm:flex-row items-center justify-evenly gap-6 max-w-md mx-auto"
 					>
 						<Button
-							title="Konsultasi gratis Sekarang"
+							title="Konsultasi gratis"
 							href="https://wa.me/6281532094978?text=Halo kak! Saya mau buat website _[isi jenis webiste]_"
-							primary="bg-blue-50 text-gray-900 rounded-full flex hover:bg-transparent hover:ring-1 hover:ring-blue-50 hover:text-blue-50 [&>svg]:rotate-[25deg] [&>svg]:text-orange-400"
+							primary="bg-blue-50 text-gray-900 capitalize text-sm rounded-full flex hover:bg-transparent hover:ring-1 hover:ring-blue-50 hover:text-blue-50 [&>svg]:rotate-[25deg] [&>svg]:text-orange-400"
 							path="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"
 						/>
 					</div>
@@ -115,11 +115,11 @@ const businessComponents = getComponents(businessFiles);
 				<div class="lg:pr-8 lg:pt-4">
 					<div class="font-geist lg:max-w-lg">
 						<p
-							class="mt-2 text-blue-950 text-3xl sm:text-5xl font-semibold tracking-wides"
+							class="mt-2 text-blue-950 text-3xl sm:text-5xl font-semibold"
 						>
-						Website Terbaik,<span class="font-normal"> Kunci Sukses</span> Bisnis!
+						Website Jadi<span class="font-normal"> Kunci Sukses</span> Bisnis!
 						</p>
-						<p class="mt-6 text-lg leading-8 text-gray-600">
+						<p class="mt-6 text-gray-600">
 							Website dapat memudahkan dunia usaha dalam
 							menjangkau pelanggan sebanyak banyaknya tanpa
 							terkendala tempat dan waktu. Kami merupakan partner
@@ -133,8 +133,8 @@ const businessComponents = getComponents(businessFiles);
 						</h2>
 						<Button
 							title="Lihat Paket"
-							href="/harga"
-							primary="bg-orange-400 text-white rounded-lg tracking-wides uppercase w-max px-6 py-3 hover:bg-blue-900 hover:text-blue-50"
+							href="#paket"
+							primary="bg-orange-400 text-white rounded-lg tracking-widest w-max px-6 py-3 hover:bg-blue-900 hover:text-blue-50"
 							path=""
 						/>
 					</div>
@@ -146,62 +146,62 @@ const businessComponents = getComponents(businessFiles);
 	<section>
 		<div class="container px-6 py-12 mx-auto">
 			<div class="text-center font-geist max-w-2xl mx-auto">
-				<h3 class="text-blue-950 text-3xl md:text-5xl font-bold mb-4">Kami memberikan <span class="font-normal">fasilitas terbaik</span> untuk Anda!</h3>
-				<p class="text-lg">
+				<h3 class="text-blue-950 text-3xl md:text-5xl font-bold mb-4 capitalize"><span class="font-normal">fasilitas terbaik</span> untuk Anda!</h3>
+				<p class=" text-gray-600">
 					Tak hanya melayani jasa pembuatan website, kami juga
 					memberikan layanan modifikasi desain website untuk mendukung
 					performa bisnis Anda.
 				</p>
 			</div>
 			<div
-				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-screen-lg mt-12 mx-auto"
+				class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 max-w-screen-lg mt-12 mx-auto"
 			>
 				<Card
 					title="Cepat & Profesional"
-					titlec="text-md text-center [&>h2]:text-xl"
 					body="Website Cepat & Profesional Sesuai Kebutuhan Anda!"
-					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700 transition-color ease-linear duration-700"
-					size="size-12"
+					titlec="text-gray-600 group-hover:text-white group-hover:[&>p]:text-white [&>p]:text-gray-500 [&>h2]:text-xl transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					primary="group py-6 bg-white flex-col rounded-xl shadow-xl hover:bg-orange-400 transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					size="size-12 bg-blue-900 group-hover:bg-white group-hover:text-blue-900 group-hover:rotate-90 p-2 rounded-full text-white transition-color ease-linear duration-700 transition-color ease-linear duration-700"
 					icon="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"
 				/>
 				<Card
 					title="Desain Elegan & Responsif"
-					titlec="text-md text-center [&>h2]:text-xl"
 					body="Desain elegan dan responsif yang memukau di semua perangkat."
-					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
-					size="size-12"
+					titlec="text-gray-600 group-hover:text-white group-hover:[&>p]:text-white [&>p]:text-gray-500 [&>h2]:text-xl transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					primary="group py-6 bg-white flex-col rounded-xl shadow-xl hover:bg-orange-400 transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					size="size-12 bg-blue-900 group-hover:bg-white group-hover:text-blue-900 group-hover:rotate-90 p-2 rounded-full text-white transition-color ease-linear duration-700 transition-color ease-linear duration-700"
 					icon="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
 				/>
 				<Card
 					title="Anti Lemot & Seo Friendly"
-					titlec="text-md text-center [&>h2]:text-xl"
 					body="Anti lemot dan SEO friendly, siap menempati halaman teratas Google."
-					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
-					size="size-12"
+					titlec="text-gray-600 group-hover:text-white group-hover:[&>p]:text-white [&>p]:text-gray-500 [&>h2]:text-xl transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					primary="group py-6 bg-white flex-col rounded-xl shadow-xl hover:bg-orange-400 transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					size="size-12 bg-blue-900 group-hover:bg-white group-hover:text-blue-900 group-hover:rotate-90 p-2 rounded-full text-white transition-color ease-linear duration-700 transition-color ease-linear duration-700"
 					icon="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"
 				/>
 				<Card
 					title="Website Mudah Dikelola"
-					titlec="text-md text-center [&>h2]:text-xl"
 					body="Mudah dikelola tanpa ribet, bahkan untuk pemula."
-					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
-					size="size-12"
+					titlec="text-gray-600 group-hover:text-white group-hover:[&>p]:text-white [&>p]:text-gray-500 [&>h2]:text-xl transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					primary="group py-6 bg-white flex-col rounded-xl shadow-xl hover:bg-orange-400 transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					size="size-12 bg-blue-900 group-hover:bg-white group-hover:text-blue-900 group-hover:rotate-90 p-2 rounded-full text-white transition-color ease-linear duration-700 transition-color ease-linear duration-700"
 					icon="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"
 				/>
 				<Card
 					title="Tim Berpengalaman"
-					titlec="text-md text-center [&>h2]:text-xl"
 					body="Dikerjakan oleh tim berpengalaman di bidangnya."
-					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
-					size="size-12"
+					titlec="text-gray-600 group-hover:text-white group-hover:[&>p]:text-white [&>p]:text-gray-500 [&>h2]:text-xl transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					primary="group py-6 bg-white flex-col rounded-xl shadow-xl hover:bg-orange-400 transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					size="size-12 bg-blue-900 group-hover:bg-white group-hover:text-blue-900 group-hover:rotate-90 p-2 rounded-full text-white transition-color ease-linear duration-700 transition-color ease-linear duration-700"
 					icon="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
 				/>
 				<Card
 					title="Konsultasi Gratis"
-					titlec="text-md text-center [&>h2]:text-xl"
 					body="Konsultasi gratis – wujudkan website impian Anda sekarang!"
-					primary="py-12 flex-col items-center rounded-xl text-white bg-blue-900 hover:bg-orange-400 transition-color ease-linear duration-700"
-					size="size-12"
+					titlec="text-gray-600 group-hover:text-white group-hover:[&>p]:text-white [&>p]:text-gray-500 [&>h2]:text-xl transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					primary="group py-6 bg-white flex-col rounded-xl shadow-xl hover:bg-orange-400 transition-color ease-linear duration-700 transition-color ease-linear duration-700"
+					size="size-12 bg-blue-900 group-hover:bg-white group-hover:text-blue-900 group-hover:rotate-90 p-2 rounded-full text-white transition-color ease-linear duration-700 transition-color ease-linear duration-700"
 					icon="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
 				/>
 			</div>
@@ -210,8 +210,8 @@ const businessComponents = getComponents(businessFiles);
 	<section>
 		<div class="container px-6 py-12 mx-auto">
 			<div class="text-center font-geist max-w-xl mx-auto">
-				<h3 class="text-3xl sm:text-5xl font-bold mb-2 text-blue-950">Proyek yang Telah Kami Selesaikan</h3>
-				<p>
+				<h3 class="text-2xl sm:text-4xl font-bold mb-2 text-blue-950">Proyek yang Telah Kami Selesaikan</h3>
+				<p class="text-gray-600">
 					Lihat bagaimana kami telah membantu berbagai bisnis mencapai tujuan mereka dengan solusi website kami
 				</p>
 			</div>
@@ -285,12 +285,12 @@ const businessComponents = getComponents(businessFiles);
 			  </fieldset> -->
 			  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-12 w-full max-w-screen-lg mx-auto">
 				{landingComponents.map(({ component: Component, title, slug, image }) => (
-				<div class="text-center font-bold font-geist rounded-lg border border-gray-300 shadow-xl">
+				<div class="text-center font-geist rounded-md border border-gray-300 shadow-xl bg-blue-900">
 				  <a href={slug} target="_blank">
 					<img src={image} alt={`Image for ${title}`} class="aspect-square object-cover object-top rounded-t-lg hover:object-bottom ease-linear transition-all duration-[3000ms] delay-100" />
 				  </a>
 				  <a href={slug} target="_blank">
-					<h2 class="my-4">{title}</h2>
+					<h2 class="my-4 text-white tracking-widest">{title}</h2>
 				  </a>
 				</div>
 				))}
@@ -298,33 +298,31 @@ const businessComponents = getComponents(businessFiles);
 		</div>
 	</section>
 	<section>
-		<div class="container px-6 py-20 mx-auto">
+		<div id="paket" class="container px-6 py-20 mx-auto">
 			<div
 				class="font-geist space-y-4 text-center max-w-screen-sm mx-auto"
 			>
-				<h6 class="font-bold text-blue-950 text-3xl md:text-5xl">
+				<h6 class="font-bold text-blue-950 text-2xl md:text-4xl">
 					Pilih Paket sesuai <span class="font-normal">kebutuhan bisnis</span> Anda
 				</h6>
-				<h6 class="">
+				<h6 class="text-gray-600">
 					Jasa pembuatan website kami yang murah dan terpercaya
 					memahami bahwa setiap bisnis memiliki kebutuhan yang
-					berbeda, kami siap bekerja sama dengan Anda untuk merancang
-					website yang sesuai dengan visi, misi, dan identitas bisnis
-					Anda.
+					berbeda.
 				</h6>
 			</div>
 			<div
-				class="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center mx-auto *:w-full *:h-max *:font-geist *:border *:border-gray-200 *:rounded-lg *:shadow-lg"
+				class="grid grid-cols-1 gap-4 mt-6 xl:mt-12 xl:gap-6 sm:grid-cols-2 md:grid-cols-3 max-w-screen-lg mx-auto *:w-full *:h-max *:font-geist *:border *:border-gray-200 *:rounded-lg *:shadow-xl"
 			>
 				<Pricing
 					title="Landing Page"
-					titleClass="p-8 text-white bg-blue-900 py-6 capitalize"
-					priceClass="px-8 [&>h2]:text-blue-900 [&>h2]:capitalize"
+					titleClass="text-gray-800 p-8 py-6 capitalize"
+					priceClass="px-8 text-black text-sm [&>h2]:capitalize"
 					titleButton="Get Started"
 					body="Cocok untuk bisnis online pemula."
 					primaryClass="[&>p]:px-8 [&>p]:py-4"
-					price="Rp650.000"
-					iconSize="size-6"
+					price="650.000"
+					iconSize="size-6 text-orange-400"
 					href="https://wa.me/6281532094978?text=Halo kak! Saya mau buat website Landing Page"
 					listItems={[
 						"1 Halaman Awal",
@@ -334,41 +332,18 @@ const businessComponents = getComponents(businessFiles);
 						"Revisi 1X Konten",
 						"Pengerjaan 3 hari kerja",
 					]}
-					buttonClass="bg-orange-400 text-white rounded-full px-12"
-					iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-				/>
-				<Pricing
-					title="Blog News"
-					titleClass="p-8 text-white bg-blue-900 py-6 capitalize"
-					priceClass="px-8 [&>h2]:text-blue-900 [&>h2]:capitalize"
-					titleButton="Get Started"
-					body="Cocok untuk Content Criter."
-					primaryClass=""
-					price="Rp1.799.000"
-					iconSize="size-6"
-					href="https://wa.me/6281532094978?text=Halo kak! Saya mau buat website Business"
-					listItems={[
-						"4 Halaman awal custom",
-						"Gratis Hosting dan Domain",
-						"Desain Responsif",
-						"Akses WP Admin",
-						"Revisi 5X Konten",
-						"Dukungan Yoast SEO",
-						"Free SSL",
-						"Pengerjaan 14 Hari kerja",
-					]}
-					buttonClass="bg-orange-400 text-white rounded-full px-12"
-					iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+					buttonClass="bg-blue-900 text-white rounded-full px-12"
+					iconPath="m4.5 12.75 6 6 9-13.5"
 				/>
 				<Pricing
 					title="Company Profile"
-					titleClass="p-8 text-white py-6 capitalize"
-					priceClass="px-8 [&>h2]:text-blue-900 [&>h2]:capitalize"
+					titleClass="text-gray-800 p-8 py-6 capitalize"
+					priceClass="px-8 text-black text-sm [&>h2]:capitalize"
 					titleButton="Get Started"
 					body="Perluas jangkauan perusahaan."
-					primaryClass="[&>p]:px-8 [&>p]:py-4"
-					price="Rp2.500.000"
-					iconSize="size-6"
+					primaryClass="[&>p]:px-8 [&>p]:py-4 !border !border-4 !border-orange-400"
+					price="2.500.000"
+					iconSize="size-6 text-orange-400"
 					href="https://wa.me/6281532094978?text=Halo kak! Saya mau buat website Company Profile"
 					listItems={[
 						"4 Halaman awal custom",
@@ -383,17 +358,17 @@ const businessComponents = getComponents(businessFiles);
 						"Pengerjaan 14 Hari kerja",
 					]}
 					buttonClass="bg-orange-400 text-white rounded-full px-12"
-					iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+					iconPath="m4.5 12.75 6 6 9-13.5"
 				/>
 				<Pricing
-					title="Business/Toko Online"
-					titleClass="p-8 text-white bg-blue-900 py-6 capitalize"
-					priceClass="px-8 [&>h2]:text-blue-900 [&>h2]:capitalize"
+					title="Toko Online"
+					titleClass="text-gray-800 p-8 py-6 capitalize"
+					priceClass="px-8 text-black text-sm [&>h2]:capitalize"
 					titleButton="Get Started"
 					body="Cocok untuk bisnis UMKM."
 					primaryClass=""
-					price="Rp2.999.000"
-					iconSize="size-6"
+					price="2.999.000"
+					iconSize="size-6 text-orange-400"
 					href="https://wa.me/6281532094978?text=Halo kak! Saya mau buat website Business"
 					listItems={[
 						"4 Halaman awal custom",
@@ -406,27 +381,25 @@ const businessComponents = getComponents(businessFiles);
 						"Free 1 akun email bisnis",
 						"Pengerjaan 14 Hari kerja",
 					]}
-					buttonClass="bg-orange-400 text-white rounded-full px-12"
-					iconPath="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+					buttonClass="bg-blue-900 text-white rounded-full px-12"
+					iconPath="m4.5 12.75 6 6 9-13.5"
 				/>
 			</div>
 		</div>
 	</section>
 	<section class="py-12 bg-gray-100 lg:flex lg:justify-center">
 		<div
-			class="container px-6 py-12 overflow-hidden bg-white lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
+			class="container px-6 py-12 overflow-hidden bg-white lg:mx-8 lg:flex gap-8 lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
 			<div class="lg:w-1/2">
 				<div class="h-64 bg-cover lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"></div>
 			</div>
-			<div class="max-w-xl px-6 lg:py-12 lg:max-w-5xl lg:w-1/2">
-				<h2 class="text-2xl font-semibold text-gray-800 dark:text-white md:text-3xl">
+			<div class="max-w-xl pt-12 lg:py-12 lg:max-w-5xl lg:w-1/2">
+				<h2 class="text-2xl font-semibold text-gray-800 dark:text-white md:text-4xl">
 					Siap Memulai Proyek  <span class="text-blue-500">Website Anda?</span>
 				</h2>
-	
 				<p class="mt-4 text-gray-500 dark:text-gray-300">
 					Jaga Code siap membantu Anda mewujudkan website impian dengan kualitas terbaik dan harga yang bersaing. Jangan tunda lagi, jadikan bisnis Anda lebih profesional dengan website yang menarik dan fungsional.
-				</p>
-	
+				</p>	
 				<div class="inline-flex w-full mt-6 sm:w-auto">
 					<Button
 							title="Buat Sekarang"
@@ -441,8 +414,8 @@ const businessComponents = getComponents(businessFiles);
 	<section>
 		<div class="container px-6 py-20 mx-auto">
 			<div class="text-center font-geist max-w-2xl mx-auto">
-				<h3 class="text-3xl text-blue-950 md:text-5xl font-bold mb-2">Alur <span class="font-normal">Pemesanan</span> Website</h3>
-				<p>
+				<h3 class="text-2xl text-blue-950 md:text-4xl font-bold mb-2">Alur <span class="font-normal">Pemesanan</span> Website</h3>
+				<p class="text-sm md:text-normal text-gray-600">
 					Kami mengutamakan kualitas dan kepuasan klien dalam setiap
 					langkah proses Jasa pembuatan website yang murah dan
 					terpercaya. 
@@ -453,7 +426,7 @@ const businessComponents = getComponents(businessFiles);
 			>
 				<Card
 					title="Konsultasi kebutuhan"
-					titlec="text-md [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
+					titlec="text-sm [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
 					body="Anda dapat berkonsultasi mengenai website impian anda termasuk fitur dan desain yang diinginkan kepada kami."
 					primary="p-0 font-geist gap-2"
 					size="text-7xl text-orange-500"
@@ -461,7 +434,7 @@ const businessComponents = getComponents(businessFiles);
 				/>
 				<Card
 					title="Konsep"
-					titlec="text-md [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
+					titlec="text-sm [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
 					body="Tim kami akan langsung merancang konsep dasar yang mencerminkan bisnis anda setelah pembayaran awal dari harga pembuatan website"
 					primary="p-0 font-geist gap-2"
 					size="text-7xl text-orange-500"
@@ -469,7 +442,7 @@ const businessComponents = getComponents(businessFiles);
 				/>
 				<Card
 					title="Desain"
-					titlec="text-md [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
+					titlec="text-sm [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
 					body="Anda dapat berdiskusi dengan tim kami terkait website impian yang sesuai dengan visi dan karakter bisnis anda. Kami memastikan tampilan website anda menarik, SEO-friendly dan responsif."
 					primary="p-0 font-geist gap-2"
 					size="text-7xl text-orange-500"
@@ -477,7 +450,7 @@ const businessComponents = getComponents(businessFiles);
 				/>
 				<Card
 					title="Development"
-					titlec="text-md [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
+					titlec="text-sm [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
 					body="Tim kami akan segera membuat website sesuai dengan desain awal yang telah disetujui. Kami akan berusaha keras menghadirkan website yang efektif dan siap digunakan."
 					primary="p-0 font-geist gap-2"
 					size="text-7xl text-orange-500"
@@ -485,7 +458,7 @@ const businessComponents = getComponents(businessFiles);
 				/>
 				<Card
 					title="Revisi"
-					titlec="text-md [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
+					titlec="text-sm [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
 					body="Kami dengan senang hati menerima umpan balik anda berupa masukan atau perubahan yang diperlukan setelah proses pembuatan website telah selesai. Revisi akan diproses sesuai dengan paket pembelian website yang dibeli."
 					primary="p-0 font-geist gap-2"
 					size="text-7xl text-orange-500"
@@ -493,7 +466,7 @@ const businessComponents = getComponents(businessFiles);
 				/>
 				<Card
 					title="Maintenance"
-					titlec="text-md [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
+					titlec="text-sm [&>p]:opacity-70 [&>h2]:text-blue-900 [&>h2]:text-xl"
 					body="Anda dapat melakukan pelunasan website kepada kami untuk pengambil alihan domain website. Kami akan memberikan dukungan dan pemeliharaan jangka panjang yang anda butuhkan setelah proyek selesai."
 					primary="p-0 font-geist gap-2"
 					size="text-7xl text-orange-500"

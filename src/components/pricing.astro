@@ -31,14 +31,13 @@ const {
 } = Astro.props;
 ---
 
-<!-- Component HTML -->
-<div class={`flex flex-col justify-between h-max py-6 bg-blue-900 ${primaryClass}`}>
+<div class={`flex flex-col justify-between h-max py-6 ${primaryClass}`}>
     <div class={`${titleClass} rounded-t-lg`}>
-        <h2 class={`text-2xl font-bold font-geist`}>{title}</h2>
-        <h2 class="font-bold text-3xl mt-3">{price}</h2>
+        <h2 class={`text-xl font-bold`}>{title}</h2>
+        <h2 class="font-bold text-3xl mt-5"> <sup class="text-lg">Rp</sup>{price}</h2>
         <p>{body}</p>
         <a href={href}>
-            <button class={`${buttonClass} font-geist font-bold text-center w-full mx-auto mt-6 px-6 py-2`}
+            <button class={`${buttonClass} text-center w-full mx-auto mt-6 px-6 py-2`}
                 >{titleButton}</button
             >
         </a>
